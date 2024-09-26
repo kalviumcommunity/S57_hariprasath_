@@ -3,6 +3,7 @@
 using namespace std;
 #include "book.h"
 #include "library.h"
+#include "ebook.h"
 
 void book()
 {
@@ -22,6 +23,9 @@ void book()
     library.book();
     library.book_size();
     books->count_of_book();
+
+    Ebook ebook(20);
+    ebook.getDetails();
     // book.getDetails();
 }
 Book::count = 0;

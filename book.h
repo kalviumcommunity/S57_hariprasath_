@@ -12,13 +12,20 @@ private:
     static int count;
 
 public:
-    // Book(string title, string author) : title(title), author(author) {}
+    Book()
+    {
+    title:
+        "Unknown";
+    author:
+        "Unknown";
+    }
     Book(string title, string author)
     {
         this->title = title;
         this->author = author;
         count++;
     }
+    ~Book() {}
     void getDetails() const
     {
         cout << "from book" << title << author << endl;

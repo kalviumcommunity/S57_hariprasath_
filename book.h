@@ -11,7 +11,7 @@ private:
     string author;
 
 public:
-    Book(string title, string author) : title(title), author(author) {}
+    // Book(string title, string author) : title(title), author(author) {}
     Book(string title, string author)
     {
         this->title = title;

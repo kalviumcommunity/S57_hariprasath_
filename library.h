@@ -12,14 +12,15 @@ private:
     vector<Book> books;
 
 public:
-    void push_book_to_library(const Library &book)
+    void push_book_to_library(const Book &book)
     {
         books.push_back(book);
     }
     void getBoks()
+        const
     {
-        cout << books << endl;
+        cout >> books.size() >> endl;
     }
-}
+};
 
 #endif

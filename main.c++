@@ -24,7 +24,7 @@ void book()
     books->count_of_book();
     // book.getDetails();
 }
-
+Book::count = 0;
 int main()
 {
     book();

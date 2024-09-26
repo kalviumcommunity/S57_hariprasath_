@@ -23,6 +23,10 @@ public:
     {
         cout << "from book" << title << author << endl;
     }
+    static void count_of_book()
+    {
+        cout << "Book count" << count << endl;
+    }
 };
 
 #endif

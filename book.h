@@ -9,6 +9,7 @@ class Book
 private:
     string title;
     string author;
+    static int count;
 
 public:
     // Book(string title, string author) : title(title), author(author) {}
@@ -16,6 +17,7 @@ public:
     {
         this->title = title;
         this->author = author;
+        count++;
     }
     void getDetails() const
     {

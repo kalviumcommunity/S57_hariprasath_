@@ -21,8 +21,10 @@ void book()
     library.push_books_to_library(books, 4);
     library.book();
     library.book_size();
+    books->count_of_book();
     // book.getDetails();
 }
+
 int main()
 {
     book();

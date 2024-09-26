@@ -1,24 +1,25 @@
-#ifndef BOOK_H
-#define BOOK_H
+#ifndef BOOK_H // check the header file is not exist ?
+#define BOOK_H // if not exist create BOOK_H to prevent from file explosion
 
 #include <iostream>
 #include <string>
-
-class Book {
+using namespace std;
+class Book
+{
 private:
-    std::string title;
-    std::string author;
+    string title;
+    string author;
 
 public:
-    // Constructor to initialize book details
-    Book(std::string title, std::string author) {
-        this->title = title;  // Using 'this' pointer to differentiate member variables
+    Book(string title, string author) : title(title), author(author) {}
+    Book(string title, string author)
+    {
+        this->title = title;
         this->author = author;
     }
-
-    // Method to display book details
-    void display() const {
-        std::cout << "Title: " << title << ", Author: " << author << std::endl;
+    void getDetails() const
+    {
+        cout << title << author << endl;
     }
 };
 

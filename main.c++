@@ -11,10 +11,15 @@ void book()
 
     cin >> title;
     cin >> author;
-    Book book(title, author);
+    Book books[4] = {
+        Book(title, author),
+        Book(title, author),
+        Book(title, author),
+        Book(title, author),
+    };
     Library library;
-    library.push_book_to_library(book);
-    library.getBoks();
+    library.push_books_to_library(books, 4);
+    library.book();
     // book.getDetails();
 }
 int main()

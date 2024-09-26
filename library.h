@@ -16,10 +16,19 @@ public:
     {
         books.push_back(book);
     }
-    void getBoks()
-        const
+    void push_books_to_library(const Book book[], int size)
     {
-        cout >> books.size() >> endl;
+        for (int i = 0; i < size; i++)
+        {
+            this->push_book_to_library(book[i])
+        }
+    };
+    void book()
+    {
+        for (const auto &book : books)
+        {
+            book.getDetails();
+        }
     }
 };
 

@@ -19,8 +19,8 @@ public:
     }
     void getDetails() const
     {
-        cout << title << author << endl;
+        cout << "from book" << title << author << endl;
     }
-}
+};
 
 #endif

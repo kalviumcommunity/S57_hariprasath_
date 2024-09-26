@@ -36,8 +36,6 @@ public:
         *size = books.size();
         cout
             << "memory allocated loaction value : " << *size << endl;
-        delete size;
-        size = nullptr;
     }
 };
 

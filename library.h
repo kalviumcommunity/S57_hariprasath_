@@ -1,30 +1,25 @@
-// #ifndef LIBRARY_H
-// #define LIBRARY_H
+#ifndef LIBRARY_H
+#define LIBRARY_H
 
-// #include "Book.h"
-// #include <vector>
+#include <iostream>
+#include <string>
+using namespace std;
+#include "book.h"
+#include <vector>
+class Library
+{
+private:
+    vector<Book> books;
 
-// class Library
-// {
-// private:
-//     std::vector<Book> books;
+public:
+    void push_book_to_library(const Library &book)
+    {
+        books.push_back(book);
+    }
+    void getBoks()
+    {
+        cout << books << endl;
+    }
+}
 
-// public:
-//     // Method to add a book to the library
-//     void addBook(const Book &book)
-//     {
-//         books.push_back(book);
-//     }
-
-//     // Method to display all books in the library
-//     void displayBooks() const
-//     {
-//         std::cout << "Books in Library:\n";
-//         for (const auto &book : books)
-//         {
-//             book.display();
-//         }
-//     }
-// };
-
-// #endif
+#endif

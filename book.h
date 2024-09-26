@@ -21,6 +21,6 @@ public:
     {
         cout << title << author << endl;
     }
-};
+}
 
 #endif

@@ -20,7 +20,7 @@ public:
     {
         for (int i = 0; i < size; i++)
         {
-            this->push_book_to_library(book[i])
+            this->push_book_to_library(book[i]);
         }
     };
     void book()
@@ -29,6 +29,15 @@ public:
         {
             book.getDetails();
         }
+    }
+    void book_size()
+    {
+        int *size = new int;
+        *size = books.size();
+        cout
+            << "memory allocated loaction value : " << *size << endl;
+        delete size;
+        size = nullptr;
     }
 };
 

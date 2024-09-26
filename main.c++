@@ -20,6 +20,7 @@ void book()
     Library library;
     library.push_books_to_library(books, 4);
     library.book();
+    library.book_size();
     // book.getDetails();
 }
 int main()

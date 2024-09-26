@@ -26,6 +26,8 @@ void book()
 
     Ebook ebook(20);
     ebook.getDetails();
+    books->bookType();
+    ebook.bookType();
     // book.getDetails();
 }
 Book::count = 0;

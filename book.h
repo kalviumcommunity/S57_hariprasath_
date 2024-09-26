@@ -34,6 +34,8 @@ public:
     {
         cout << "Book count" << count << endl;
     }
+    virtual void bookType()
+        const = 0;
 };
 
 #endif

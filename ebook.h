@@ -14,6 +14,10 @@ public:
     Book::getDetails();
     cout << "filesize : " << filesize << " EB" << endl;
   }
+  void bookType() override
+  {
+    cout << "Ebook" << endl;
+  }
 }
 
 #endif
